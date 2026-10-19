@@ -1,56 +1,53 @@
-import "./sass/index.scss";
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".site-nav");
+const form = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
+const year = document.querySelector("#current-year");
 
-// Navbar
-const hamburger = document.querySelector(".header__hamburger");
-const nav = document.querySelector(".nav");
-const blur = document.querySelector(".blur");
-const navClose = document.querySelector(".nav__close");
-hamburger.addEventListener("click", () => {
-  nav.classList.toggle("nav--visible");
-  blur.classList.toggle("blur--visible");
+function setMenuOpen(isOpen) {
+  menuButton.setAttribute("aria-expanded", String(isOpen));
+  menuButton.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+  navigation.classList.toggle("site-nav--open", isOpen);
+}
+
+menuButton.addEventListener("click", () => {
+  setMenuOpen(menuButton.getAttribute("aria-expanded") !== "true");
 });
 
-navClose.addEventListener("click", () => {
-  nav.classList.toggle("nav--visible");
-  blur.classList.toggle("blur--visible");
+navigation.addEventListener("click", (event) => {
+  if (event.target.closest("a")) setMenuOpen(false);
 });
 
-// Form
-const form = document.querySelector(".form");
-const responseModal = document.querySelector(".popup");
-const responseModalText = document.querySelector(".popup__text");
-const responseModalClose = document.querySelector(".popup__close");
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setMenuOpen(false);
+});
 
-form.addEventListener("submit", async function (event) {
+year.textContent = new Date().getFullYear();
+
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const formData = new FormData(this);
-  blur.classList.add("blur--visible");
+  const submitButton = form.querySelector('button[type="submit"]');
+  submitButton.disabled = true;
+  formStatus.textContent = "Enviando sua mensagem…";
+  formStatus.classList.remove("form-status--error");
 
   try {
-    const response = await fetch("send_email.php", {
+    const response = await fetch(form.action, {
       method: "POST",
-      body: formData,
+      body: new FormData(form),
     });
 
+    if (!response.ok) throw new Error("Falha no envio");
     const result = await response.json();
+    if (!result.success) throw new Error("O servidor não confirmou o envio");
 
-    responseModal.showModal();
-
-    if (result.success) {
-      responseModalText.textContent = "Cadastro enviado com sucesso!";
-      responseModalText.textContent = "Cadastro enviado com sucesso!";
-      this.reset();
-    } else {
-      responseModalText.textContent =
-        "Erro ao enviar cadastro. Tente novamente.";
-    }
-  } catch (error) {
-    responseModalText.textContent = "Erro na comunicação com o servidor.";
+    formStatus.textContent = "Mensagem enviada! Em breve falaremos com você.";
+    form.reset();
+  } catch {
+    formStatus.textContent = "Não foi possível enviar agora. Tente pelo WhatsApp ou tente novamente mais tarde.";
+    formStatus.classList.add("form-status--error");
+  } finally {
+    submitButton.disabled = false;
   }
-});
-
-responseModalClose.addEventListener("click", () => {
-  blur.classList.remove("blur--visible");
-  responseModal.close();
 });
