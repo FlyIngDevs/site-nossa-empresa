@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça a Flying — a empresa de tecnologia e marketing digital de Mogi Mirim que leva seu negócio para o próximo nível."
+    />
+    <title>Flying</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="blur"></div>
+
+      <div class="whatsapp">
+        <a
+          class="whatsapp__link"
+          href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+          target="_blank"
+        >
+          <img src="src/assets/icons/whatsapp.svg" class="whatsapp__icon" />
+        </a>
+      </div>
+
+      <dialog class="popup">
+        <h1 class="popup__heading">Atenção!</h1>
+        <p class="popup__text"></p>
+        <button class="popup__close button">Fechar</button>
+      </dialog>
+
+      <!-- Navegação/Cabeçalho -->
+      <header class="header">
+        <div class="header__content">
+          <a href="/" class="header__logo">
+            <img
+              class="logo__image"
+              src="src/assets/images/logo_empresa.png"
+              alt=""
+            />
+            <p class="logo__text">FLYING</p>
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__links">
+              <div class="nav__item nav__close">
+                <img src="src/assets/icons/close.svg" alt="" />
+              </div>
+
+              <li class="nav__item">
+                <img class="nav__icon" src="src/assets/icons/home.svg" alt="" />
+                <a href="" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Sobre nós</a>
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">O que fazemos</a>
+              </li>
+              <li class="nav__item">
+                <img class="nav__icon" src="src/assets/icons/help.svg" alt="" />
+                <a href="#team" class="nav__link">Equipe</a>
+              </li>
+              <li class="nav__item">
+                <img
+                  class="nav__icon"
+                  src="src/assets/icons/phone.svg"
+                  alt=""
+                />
+                <a href="#contact" class="nav__link">Contato</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__hamburger">
+            <img src="src/assets/icons/menu.svg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section id="hero" class="section hero">
+          <div class="section__content">
+            <div class="container">
+              <h1 class="section__heading heading--1">
+                Seja encontrado pelo seu público
+              </h1>
+              <h2 class="section__heading heading--2">
+                Impulsione suas
+                <span class="heading--highlighting">VENDAS</span> e aumente seu
+                <span class="heading--highlighting">FATURAMENTO</span>
+              </h2>
+              <p class="section__paragraph">
+                Conheça a Flying — a empresa de tecnologia e marketing digital
+                de Mogi Mirim que leva seu negócio para o próximo nível.
+              </p>
+              <p class="section__paragraph">
+                Com uma equipe altamente qualificada, oferecemos soluções
+                completas e personalizadas para atender todas as suas
+                necessidades em marketing digital e tecnologia.
+              </p>
+              <a
+                class="button"
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                target="_blank"
+                >Falar Agora</a
+              >
+            </div>
+            <div class="container">
+              <img
+                class="section__image hero__image"
+                src="src/assets/images/hero_image.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Sobre nós -->
+        <section id="about" class="section about">
+          <div class="section__content about__content">
+            <div class="about__headlines">
+              <div class="container about__container">
+                <h2 class="about__heading">SOBRE A FLYING</h2>
+                <p class="about__paragraph">
+                  Sediada em Mogi Mirim, somos uma empresa especializada em
+                  tecnologia e marketing digital, oferecendo soluções completas
+                  para empresas que desejam crescer, se destacar e vender mais.
+                </p>
+                <p class="about__paragraph">
+                  Nossa trajetória é marcada por inovação, proximidade com o
+                  cliente e resultados concretos. Desenvolvemos sites,
+                  campanhas, automações e sistemas sob medida — sempre com foco
+                  na performance e na experiência do usuário.
+                </p>
+                <p class="about__paragraph">
+                  Na Flying, cada projeto é único, e cada cliente é uma parceria
+                  de longo prazo.
+                </p>
+
+                <a
+                  href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                  class="button button--dark about__button"
+                  target="_blank"
+                  >Fale Conosco!</a
+                >
+              </div>
+              <img
+                class="section__image about__image"
+                src="src/assets/images/about_image.jpeg"
+                alt=""
+              />
+            </div>
+
+            <div class="container about__cards-wrapper">
+              <div class="cards about__cards">
+                <article class="card about__card">
+                  <div class="card__content">
+                    <img
+                      class="about__icon"
+                      src="src/assets/icons/history.svg"
+                      alt=""
+                    />
+                    <h1 class="card__heading">Sempre inovando</h1>
+                    <p class="card__paragraph">
+                      Na Flying, acreditamos que a inovação é o motor que
+                      transforma ideias em conquistas, move pessoas e nos leva
+                      além do esperado. Ela não é apenas um diferencial — é o
+                      que nos inspira todos os dias a criar o novo.
+                    </p>
+                  </div>
+                </article>
+                <article class="card about__card">
+                  <div class="card__content">
+                    <img
+                      class="about__icon"
+                      src="src/assets/icons/atom.svg"
+                      alt=""
+                    />
+                    <h1 class="card__heading">Conhecimento que Impulsiona.</h1>
+                    <p class="card__paragraph">
+                      Mais do que teoria, colocamos nosso domínio técnico e
+                      estratégico em prática todos os dias. Somos um time
+                      comprometido em transformar conhecimento em ações reais
+                      que impulsionam o sucesso dos nossos clientes.
+                    </p>
+                  </div>
+                </article>
+                <article class="card about__card">
+                  <div class="card__content">
+                    <img
+                      class="about__icon"
+                      src="src/assets/icons/messages.svg"
+                      alt=""
+                    />
+                    <h1 class="card__heading">
+                      Transformação que gera crescimento
+                    </h1>
+                    <p class="card__paragraph">
+                      Na Flying, transformação não é apenas um resultado — é
+                      parte do processo. Acreditamos que cada projeto tem o
+                      poder de reinventar negócios, reposicionar marcas e abrir
+                      novas possibilidades. Ao final da jornada com a nossa
+                      equipe, sua empresa não será mais a mesma. Estará mais
+                      forte, mais visível e pronta para faturar mais.
+                    </p>
+                  </div>
+                </article>
+                <article class="card about__card">
+                  <div class="card__content">
+                    <img
+                      class="about__icon"
+                      src="src/assets/icons/bookmark.svg"
+                      alt=""
+                    />
+                    <h1 class="card__heading">Marketing de Conteúdo</h1>
+                    <p class="card__paragraph">
+                      Produzimos conteúdos estratégicos e relevantes que engajam
+                      seu público, fortalecem sua marca e impulsionam a
+                      autoridade no seu segmento. Seja em blogs, redes sociais,
+                      vídeos ou e-books, nossa abordagem é focada em gerar valor
+                      e construir relacionamentos duradouros.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Call to Action 1 -->
+        <section id="cta-1" class="section cta-1">
+          <div class="section__content cta-1__content">
+            <article class="section__article cta-1__article">
+              <section class="container">
+                <h1
+                  class="section__heading heading--1 heading--dark cta-1__heading"
+                >
+                  Seja encontrado pelos seus clientes
+                </h1>
+                <h2
+                  class="section__heading heading--2 heading--dark cta-1__heading cta-1__heading--2"
+                >
+                  Impulsione suas vendas com marketing digital.
+                </h2>
+              </section>
+              <a
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                class="button cta-1__button"
+                target="_blank"
+                >Contrate</a
+              >
+            </article>
+
+            <article class="section__article cta-1__article">
+              <section class="container">
+                <h1
+                  class="section__heading heading--1 heading--dark cta-1__heading"
+                >
+                  Destaque-se nas buscas online
+                </h1>
+                <h2
+                  class="section__heading heading--2 heading--dark cta-1__heading cta-1__heading--2"
+                >
+                  Coloque seu site no topo da internet e conquiste mais
+                  clientes.
+                </h2>
+              </section>
+              <a
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                class="button button--dark cta-1__button"
+                target="_blank"
+              >
+                Contrate
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Nossos serviços -->
+        <section id="services" class="section services">
+          <div class="section__content services__content">
+            <div class="container services__container">
+              <h1 class="services__heading">NOSSOS SERVIÇOS</h1>
+              <p class="services__paragraph">
+                Aqui você encontra soluções completas em marketing para todas as
+                necessidades da sua empresa. Desde estratégias personalizadas
+                até a execução de campanhas eficazes, nosso objetivo é garantir
+                resultados rápidos e consistentes.
+              </p>
+
+              <div class="cards services__cards">
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-1.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Criação Reestruturação de Sites
+                    </h1>
+                  </div>
+                </article>
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-2.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Criação de Logotipos
+                    </h1>
+                  </div>
+                </article>
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-3.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Impressos
+                    </h1>
+                  </div>
+                </article>
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-4.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Personalização de redes sociais
+                    </h1>
+                  </div>
+                </article>
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-5.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Consultoria de marketing
+                    </h1>
+                  </div>
+                </article>
+                <article class="card services__card">
+                  <div class="card__content">
+                    <img
+                      src="src/assets/images/services_card-6.jpeg"
+                      alt=""
+                      class="card__image services__image"
+                    />
+                    <h1 class="card__heading services__card-heading">
+                      Flying Tech Support
+                    </h1>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Detalhes/Especialidades -->
+        <section id="details" class="section details">
+          <div class="section__content">
+            <div class="container details__container">
+              <h1 class="section__heading heading--1">Especialidade</h1>
+              <h2 class="section__heading heading--2">
+                CRIAÇÃO OU REFORMA DE SITES PARA
+
+                <span class="heading--highlighting">EMPRESAS</span>.
+              </h2>
+              <p class="section__paragraph">
+                Nós criamos sites do zero ou damos uma boa repaginada no seu
+                site antigo. A ideia é simples: mostrar a cara da sua empresa,
+                atrair mais clientes e trazer resultados de verdade.
+              </p>
+              <p class="section__paragraph">
+                Seu público já procura por você na internet. Com um site bem
+                feito e estratégias básicas de marketing digital, sua empresa
+                aparece com destaque nas buscas.
+              </p>
+
+              <article class="card details__card">
+                <h2 class="list__heading">O que você ganha:</h2>
+                <div class="card__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      Coloca sua empresa no mundo digital
+                    </li>
+                    <li class="list__item">
+                      Faz seus clientes encontrarem você com facilidade
+                    </li>
+                    <li class="list__item">
+                      Cria uma vitrine online visualmente agradável e organizada
+                    </li>
+                    <li class="list__item">
+                      Apresenta seus produtos ou serviços de forma clara
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="container details__container">
+              <img
+                class="section__image"
+                src="src/assets/images/details_image.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Conhecendo o time -->
+        <section id="team" class="section team">
+          <div class="section__content team__content">
+            <div class="container team__container">
+              <h2 class="section__heading team__heading heading--2">
+                QUEM FAZ
+                <span class="heading--highlighting-secondary">ACONTECER</span>
+              </h2>
+              <p class="section__paragraph team__paragraph">
+                Somos mais que uma equipe, somos profissionais movidos por
+                desafios e apaixonados por resultados. Essa energia nos
+                impulsiona a entregar sempre o melhor, com foco, criatividade e
+                estratégia.
+              </p>
+              <p class="section__paragraph team__paragraph">
+                Unimos experiência, talento e visão para transformar ideias em
+                resultados concretos. Estamos prontos para levar sua marca ao
+                próximo nível.
+              </p>
+
+              <div class="cards team__cards">
+                <article class="card team__card">
+                  <img
+                    src="src/assets/images/leonardo.jpg"
+                    alt=""
+                    class="team__image"
+                  />
+                  <div class="container team__info">
+                    <div class="team__name-wrapper">
+                      <p class="team__name">Leonardo Silva</p>
+                      <a
+                        class="team__link"
+                        href="https://www.linkedin.com/in/leonardo-silvaa/"
+                        target="_blank"
+                        ><img
+                          class="team__icon"
+                          src="src/assets/icons/linkedin.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                    <p class="team__position">CEO & Desenvolvedor Back-end</p>
+                  </div>
+                </article>
+                <article class="card team__card">
+                  <img
+                    src="src/assets/images/adriana.jpg"
+                    alt=""
+                    class="team__image"
+                  />
+                  <div class="container team__info">
+                    <div class="team__name-wrapper">
+                      <p class="team__name">Adriana Messias</p>
+                      <a
+                        class="team__link"
+                        href="https://www.linkedin.com/in/adriana-messias-6646a4321/"
+                        target="_blank"
+                        ><img
+                          class="team__icon"
+                          src="src/assets/icons/linkedin.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                    <p class="team__position">
+                      Estrategista de Marketing e Designer Gráfico
+                    </p>
+                  </div>
+                </article>
+                <article class="card team__card">
+                  <img
+                    src="src/assets/images/bruno4.jpg"
+                    alt=""
+                    class="team__image"
+                  />
+                  <div class="container team__info">
+                    <div class="team__name-wrapper">
+                      <p class="team__name">Bruno Silva</p>
+                      <a
+                        class="team__link"
+                        href="https://www.linkedin.com/in/bruno-silva-oliveira-b391a02ab/"
+                        target="_blank"
+                        ><img
+                          class="team__icon"
+                          src="src/assets/icons/linkedin.svg"
+                          alt=""
+                      /></a>
+                    </div>
+
+                    <p class="team__position">Desenvolvedor Front-end</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formulário -->
+        <section id="contact" class="section contact-form">
+          <div class="section__content contact-form__content">
+            <div class="container">
+              <h2 class="section__heading contact-form__heading heading--2">
+                CONQUISTE MAIS CLIENTES COM A
+
+                <span class="heading--dark heading--highlighting-secondary"
+                  >FLYING</span
+                >
+                🚀
+              </h2>
+              <p class="section__paragraph contact-form__paragraph">
+                Chegou a hora de levar a sua empresa para o próximo nível.
+              </p>
+              <p class="section__paragraph contact-form__paragraph">
+                Preencha nosso formulário e fale conosco!
+              </p>
+            </div>
+            <form id="contact-form" class="form">
+              <h3 class="form__heading">FALE CONOSCO</h3>
+              <div class="form__wrapper">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name"
+                  name="name"
+                  placeholder="Nome"
+                  required
+                />
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+
+              <input
+                type="tel"
+                class="form__input"
+                id="phone"
+                name="phone"
+                placeholder="Telefone"
+              />
+
+              <textarea
+                class="form__input form__textbox"
+                type="mensagem"
+                id="message"
+                name="message"
+                placeholder="Mensagem"
+              ></textarea>
+
+              <button class="button form__button" type="submit">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- Rodapé/Links/Contatos -->
+      <footer id="footer" class="footer">
+        <div class="footer__content">
+          <div class="footer__container">
+            <div class="footer__links">
+              <a
+                class="footer__link"
+                href="https://www.facebook.com/FLYING.MM"
+                target="_blank"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/facebook.svg"
+                  alt=""
+              /></a>
+              <a
+                class="footer__link"
+                href="https://www.instagram.com/fly.ing.mm/"
+                target="_blank"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/instagram.svg"
+                  alt=""
+              /></a>
+              <a
+                class="footer__link"
+                href="https://wa.me/5519998339696?text=Olá%2C%20gostaria%20de%20mais%20informações%21"
+                target="_blank"
+                ><img
+                  class="footer__icon"
+                  src="src/assets/icons/whatsapp.svg"
+                  alt=""
+              /></a>
+            </div>
+            <div class="footer__phone-info">
+              <img
+                class="footer__icon"
+                src="src/assets/icons/phone.svg"
+                alt=""
+              />
+              <a href="tel:+5519998339696" class="footer__phone" target="_blank"
+                >+55 (19) 99833-9696</a
+              >
+            </div>
+            <div class="footer__email-info">
+              <img
+                class="footer__icon"
+                src="src/assets/icons/mail.svg"
+                alt=""
+              />
+              <a
+                href="mailto:contatoflyingmm@gmail.com"
+                class="footer__email"
+                target="_blank"
+                >contatoflyingmm@gmail.com</a
+              >
+            </div>
+          </div>
+          <p class="footer__copyright">
+            © 2025 Flying - Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

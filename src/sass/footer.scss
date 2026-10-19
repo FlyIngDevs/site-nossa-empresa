@@ -1,0 +1,62 @@
+.footer {
+  color: white;
+  background-color: hsl(0, 0%, 20%);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 4em 1.5em;
+    gap: 4em;
+    align-items: center;
+  }
+
+  &__links {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 2em;
+    justify-content: center;
+  }
+  &__link {
+    background-color: white;
+    box-shadow: 2px 2px hsl(0, 0%, 50%);
+    display: block;
+    height: fit-content;
+    margin-bottom: 0.2em;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in;
+    padding: 0.25em;
+    border-radius: 2em;
+    border: 1px solid hsl(0, 0%, 100%);
+    &:active,
+    &:hover {
+      background-color: hsl(0, 0%, 95%);
+      border: 1px solid hsl(0, 0%, 55%);
+      transform: scale(1.1);
+    }
+  }
+  &__phone-info,
+  &__email-info {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    &:active, &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  &__icon {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.25em;
+  }
+  &__copyright {
+    font-size: clamp(1em, 1em + 1vw, 1.25em);
+
+    padding-top: 1em;
+    width: 100%;
+    border-top: 1px solid hsl(0, 0%, 50%);
+    text-align: center;
+  }
+}
