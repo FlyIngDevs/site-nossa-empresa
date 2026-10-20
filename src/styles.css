@@ -224,6 +224,7 @@ h1 em, h2 em { color: var(--cyan); font-style: normal; }
 .client-logo:hover, .client-logo:focus-visible { border-color: rgba(9, 184, 237, 0.6); background: rgba(9, 44, 65, 0.85); color: #f2f9ff; }
 .client-logo svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
 .client-logo img { display: block; max-width: 142px; max-height: 56px; object-fit: contain; }
+.client-logo--acai img { max-width: 126px; max-height: 48px; }
 .client-logo span { display: flex; flex-direction: column; color: inherit; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; line-height: 1.15; }
 .client-logo span b { color: #829bad; font-size: 0.48rem; letter-spacing: 0.18em; }
 @keyframes client-marquee { to { transform: translateX(-50%); } }
@@ -287,6 +288,9 @@ h1 em, h2 em { color: var(--cyan); font-style: normal; }
   .contact-form .button { width: 100%; }
   .client-carousel__heading { align-items: flex-start; flex-direction: column; gap: 0.25rem; }
   .client-logo { min-width: 135px; height: 62px; }
+  .client-logo--acai { min-width: 156px; height: 74px; flex-direction: column; gap: 0.1rem; padding: 0.35rem 0.55rem; }
+  .client-logo--acai img { width: 100%; max-width: 124px; max-height: 44px; }
+  .client-logo--acai span { font-size: 0.55rem; }
   .team-grid { grid-template-columns: 1fr; max-width: 28rem; margin-inline: auto; }
   .team-card__photo { width: 96px; height: 96px; }
   .site-footer { grid-template-columns: 1fr; padding: 1.5rem 1rem; }
