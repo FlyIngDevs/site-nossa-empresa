@@ -223,6 +223,7 @@ h1 em, h2 em { color: var(--cyan); font-style: normal; }
 .client-logo { display: inline-flex; min-width: 150px; height: 68px; align-items: center; justify-content: center; gap: 0.65rem; padding: 0.75rem 1rem; border: 1px solid rgba(126, 171, 199, 0.15); border-radius: 0.6rem; background: rgba(4, 17, 29, 0.62); color: #b9c9d6; transition: border-color 160ms ease, color 160ms ease, background 160ms ease; }
 .client-logo:hover, .client-logo:focus-visible { border-color: rgba(9, 184, 237, 0.6); background: rgba(9, 44, 65, 0.85); color: #f2f9ff; }
 .client-logo svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+.client-logo img { display: block; max-width: 142px; max-height: 56px; object-fit: contain; }
 .client-logo span { display: flex; flex-direction: column; color: inherit; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; line-height: 1.15; }
 .client-logo span b { color: #829bad; font-size: 0.48rem; letter-spacing: 0.18em; }
 @keyframes client-marquee { to { transform: translateX(-50%); } }
