@@ -34,13 +34,12 @@ form.addEventListener("submit", async (event) => {
 
   try {
     const response = await fetch(form.action, {
-      method: "POST",
+      method: form.method,
       body: new FormData(form),
+      headers: { Accept: "application/json" },
     });
 
     if (!response.ok) throw new Error("Falha no envio");
-    const result = await response.json();
-    if (!result.success) throw new Error("O servidor não confirmou o envio");
 
     formStatus.textContent = "Mensagem enviada! Em breve falaremos com você.";
     form.reset();
